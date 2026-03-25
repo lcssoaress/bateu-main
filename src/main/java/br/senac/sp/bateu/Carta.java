@@ -2,8 +2,8 @@ package br.senac.sp.bateu;
 
 public class Carta {
 
-    private final int numero;
-    private final Naipe naipe;
+    private int numero;
+    private Naipe naipe;
 
     public Carta(int numero, Naipe naipe) {
         this.numero = numero;
