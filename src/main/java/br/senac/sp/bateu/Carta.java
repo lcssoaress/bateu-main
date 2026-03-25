@@ -1,24 +1,30 @@
 package br.senac.sp.bateu;
 
 public class Carta {
-    int numero = 56;
-    private int numero(){
 
+    private final int numero;
+    private final Naipe naipe;
 
+    public Carta(int numero, Naipe naipe) {
+        this.numero = numero;
+        this.naipe = naipe;
     }
-    private Naipe naipe;
 
-
-
-    public Carta(int Naipe){
-      if (){
-
-      }
+    public int getNumero() {
+        return numero;
     }
-    public void getImagem(){
 
+    public Naipe getNaipe() {
+        return naipe;
     }
-    public int getNumero;
 
+    public String getImagem() {
+        // O diretório está em resources/static/cartas
+        return "/cartas/" + numero + naipe.name() + ".png";
+    }
 
+    @Override
+    public String toString() {
+        return "Carta{" + "numero=" + numero + ", naipe=" + naipe + '}';
+    }
 }
