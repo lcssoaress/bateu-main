@@ -10,7 +10,7 @@ public class BateuController {
 
     // declare e instancie um atribulo do tipo baralho
     private int cont = 0;
-    private int baralho = 0;
+    private string baralho = 0;
     @GetMapping
     public String index() {
         return "index"; 
